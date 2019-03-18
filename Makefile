@@ -6,12 +6,12 @@ RM = rm -f
 EXEC = bin/venice
 CC = gcc
 CFLAGS  = -fPIC -Wall -Wextra -O3 #-g
-LDFLAGS =
-PREFIX_GSL = # default: /usr/local
-PREFIX_CFITSIO = # default: /usr/local
+#LDFLAGS =
+PREFIX_GSL = /softs/gsl/2.5
+PREFIX_CFITSIO = /softs/cfitsio/3.450
 # Where python is installed
-CFLAGS_PYTHON  = -I/usr/include/python2.6
-LDFLAGS_PYTHON = -ldl -lpython2.6
+CFLAGS_PYTHON  = -I/opt/intel/intelpython3/bin/python
+LDFLAGS_PYTHON = -ldl -lpython3.6
 
 
 # read locations for gsl and CFITSIO
